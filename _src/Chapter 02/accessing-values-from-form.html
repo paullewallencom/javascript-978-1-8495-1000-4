@@ -1,0 +1,77 @@
+<html>
+<head><title>Getting Values from a HTML form</title>
+<script type="text/javascript">
+
+/*
+In this example, we'll access form values using the following syntax:
+
+document.NameOfForm.NameOfElement
+
+where:
+
+NameOfForm is the name of corresponding 
+form
+NameOfElement is the name of the element ( within the corresponding form)
+
+*/
+function checkValues(){
+    var userInput = document.testingForm.enterText.value;
+    alert(userInput);
+    var userInputTextArea = document.testingForm.enterTextArea.value;
+    alert(userInputTextArea);
+    var userCheckBox = document.testingForm.clickCheckBox.value;   
+   // this is for checkbox
+    if(document.testingForm.clickCheckBox.checked){
+   	
+	userCheckBox = true;
+    }
+    else{
+	userCheckBox = false;
+
+    } 
+    alert(userCheckBox);    
+    //var userSelectBox = document.testingForm.select.value;
+    var userSelectBox = document.testingForm.userSelectBox.value;
+    alert(userSelectBox);    
+    // here's another way you can "loop" through your form elements
+    alert(document.testingForm.radioType.length);
+    for(var counter = 0; counter<document.testingForm.radioType.length;counter++){
+        if(document.testingForm.radioType[counter].checked){
+            var userRadioButton = document.testingForm.radioType[counter].value;            
+            alert(userRadioButton);
+        }
+    }       
+}
+</script>
+</head>
+<body>
+
+<h1>A simple form showing how values are accessed by JavaScript</h1>
+<form name="testingForm" onsubmit="return checkValues()">
+<p>Enter something in text field:<input type="text" name="enterText"  /></p>
+<p>Enter something in textarea:<textarea rows="2" cols="20" name="enterTextArea"></textarea></p>
+<p>Check on the checkbox:<input type="checkbox" name="clickCheckBox"  /></p>
+<p>Select an option:
+<select name="userSelectBox">
+  <option value="EMPTY">--NIL--</option>
+  <option value="option1">option1</option>
+  <option value="option2">option2</option>
+  <option value="option3">option3</option>
+  <option value="option4">option4</option>
+</select>
+</p>
+<p>Select a radio buttons:<br />
+  <input type="radio" name="radioType" value="python" /> Python
+  <br />
+  <input type="radio" name="radioType" value="javascript" /> JavaScript
+  <br />
+  <input type="radio" name="radioType" value="java" /> Java
+  <br />
+  <input type="radio" name="radioType" value="php" /> PHP
+  <br />
+  <input type="radio" name="radioType" value="actionscript" /> ActionScript 3.0
+</p>
+<input type="submit" value="Submit form" />
+</form>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css" media="screen, print, projection">
+	body,
+	html {
+		margin:0;
+		padding:0;
+		color:#000;
+		background:#cccccc;
+	}
+	#wrap {
+		width:750px;
+		margin:0 auto;
+		background:#99c;
+	}
+	#header {
+    		padding:5px 10px;
+		background:#eeeeee;
+		border:black 1px solid;
+	}
+
+	#sampleform {
+		width:200px;
+		float:left;
+	}
+	#dynamic {
+		width:200px;
+		height:200px;
+		float:right;
+		border:black 1px solid;
+		
+	}
+	h1 {
+	    margin:0;
+    	}
+	#nav {
+		padding:5px 10px;
+		background:#c99;
+	}
+	#nav ul {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#nav li {
+		display:inline;
+		margin:0;
+		padding:0;
+	}
+	#main {
+		float:left;
+		width:480px;
+		padding:10px;
+		background:#9c9;
+		height:400px;
+	}
+	h2 {
+		margin:0 0 1em;
+	}
+	#sidebar {
+		float:right;
+		width:230px;
+		padding:10px;
+		background:#99c;
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+		background:#cc9;
+		border:black 1px solid;
+	}
+	#footer p {
+		margin:0;
+
+    	}
+	* html #footer {
+		height:1px;
+	}
+	</style>
+
+	<script type="text/javascript">
+
+		function add(a, b) {
+			return a + b;
+		}		
+
+		function minus(a,b) {
+			return a - b;
+		}
+
+		function multiply(a,b) {
+			return a*b;
+		}
+		function divide(a,b) {
+			return a/b;
+		}
+		
+		function buildContent(answer, operand){
+			var element = document.getElementById("dynamic");
+			if(operand == "add") { 
+				element.innerHTML += "<p>The answer after adding is : " + answer + "</p>";
+			}
+			else if(operand == "minus") {
+				element.innerHTML += "After minus, the answer is : " + answer + "</p>";
+			}
+			else if(operand == "multiply") {
+				element.innerHTML += "After multiply, the answer is : " + answer + "</p>";
+			}
+			else if(operand == "divide") { 
+				element.innerHTML += "After division, the answer is : " + answer + "</p>";		
+			}
+			else
+				alert("error");
+				
+			
+		}
+
+		function formSubmit() {
+			var numberA = document.sampleform.firstnumber.value;
+			var numberB = document.sampleform.secondnumber.value;
+			var answerA = add(numberA, numberB);
+			var answerB = minus(numberA, numberB);
+			var answerC = multiply(numberA, numberB);
+			var answerD = divide(numberA, numberB);
+			
+			// buildContent(noSuchThing, "add");
+			buildContent(answerA, "add");
+			buildContent(answerB, "minus");
+			buildContent(answerC,"multiply");
+			buildContent(answerD,"divide");
+			
+			return false;
+		}
+		
+
+		
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header"><h1>Example</h1></div>
+	<div id="nav">
+		<ul>
+			<li><a href="/">Option 1</a></li>
+			<li><a href="/">Option 2</a></li>
+			<li><a href="/">Option 3</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<h2>Column 1</h2>
+		<p>Example for Internet Explorer.</p>
+		
+		<form id="sampleform" name="sampleform" onsubmit="return formSubmit();">
+		Enter a number:
+		<input type="text" name="firstnumber" />
+		<br />
+		Enter another number:
+		<input type="text" name="secondnumber" />
+		<br />
+		<input type="submit" value="Submit"  />
+		</form> 
+
+		<div id="dynamic">
+			<p> Dynamic content </p>
+		</div>
+	</div>
+	<div id="sidebar">
+		<h2>Column 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel magna.</p>
+		<ul>
+			<li><a href="/">Link 1</a></li>
+			<li><a href="/">Link 2</a></li>
+			<li><a href="/">Link 3</a></li>
+			<li><a href="/">Link 4</a></li>
+			<li><a href="/">Link 5</a></li>
+			<li><a href="/">Link 6</a></li>
+			<li><a href="/">Link 7</a></li>
+
+		</ul>
+	</div>
+	<div id="footer">
+		<p>Footer</p>
+	</div>
+</div>
+</body>
+</html>

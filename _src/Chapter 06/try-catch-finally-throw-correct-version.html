@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function factorial(x) {
+    if(x == 0) {
+        return 1;
+    }
+    else {
+        return x * factorial(x-1);
+    }
+               
+}
+
+try {
+
+    var a = prompt("Please enter a positive integer", "");
+    if(a < 0){
+        throw "negative-error";
+    }
+    else if(isNaN(a)){
+        throw "not-a-number";
+    }
+    var f = factorial(a);
+    
+    alert(a + "! = " + f);
+}
+catch (error) {  
+    if(error == "negative-error") {
+        alert("value cannot be negative");     
+    }
+    else if(error == "not-a-number") {
+        alert("value must be a number");
+    }
+    else
+        throw error;
+}
+finally {
+    alert("ok, all is done!");
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

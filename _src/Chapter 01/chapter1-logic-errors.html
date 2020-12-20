@@ -1,0 +1,47 @@
+<html>
+<head><title>JavaScript Errors</title>
+<script type="text/javascript">
+/* Logic Errors */
+
+//saving some input in wrong variables
+function amountOfMoneySaved(amount){
+    var amountSpent, amountSaved;
+    amountSpent = amount; // where you really meant amountSaved
+    var currentAmount = 100;
+    var totalAmountSaved = currentAmount - amountSpent;
+    alert("The total amount of money you have now is " + totalAmountSaved );       
+}
+
+function checkInput(amount){
+    
+    if(amount>0 && amount<99)
+        alert("is number");
+    else
+        alert("NOT number");
+}
+
+</script>
+</head>
+
+<body>
+<!-- 
+this shows an infinite loop, an obvious logic error
+I've commented out so that your browser doesnt hang.
+-->
+
+<script>
+/*
+// an infinite loop
+for(var i = 0; i<10; i--){
+    document.write(i + "<br>");
+}
+*/
+</script>
+ 
+<form id="moneyForm">
+  You currently have 100 dollars.
+  The amount of money you have saved is: <input type="text" id="money" name="money" /><br />
+  <input type="submit" value="Submit" onclick="amountOfMoneySaved(moneyForm.money.value)" />
+</form>
+</body>
+</html>

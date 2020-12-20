@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Getting the right values</title>
+<style>
+input{
+    padding:5px;
+    margin:5px;
+    font-size:10px;
+}
+
+.shown{
+    display:none;
+}
+.response{
+    padding:5px;
+    margin:5px;
+    width:inherit;
+    color:red;
+    font-size:16px;
+    float:left;    
+}
+#container{
+    position:absolute;
+    width:800px;
+    padding:5px;
+    border: 2px solid black;
+    height:430px;
+}
+#left{    
+    height:inherit;
+    width:370px; 
+    border-right:2px solid black;
+    float:left;  
+    padding:5px;
+}
+
+#right{
+    height:inherit;    
+    width:300px;
+    float:left;
+    padding:5px;
+}
+#bottom{
+    float:left;
+    bottom:5px;
+    padding:5px;
+}
+
+#finalResponse{
+    float:left;
+    width:780px;
+    height:250px;
+    border:3px solid blue;
+    padding:5px;
+}
+
+/* this is for debugging messages */
+#debugging{
+    float:left;
+    margin-left:820px;
+    height:95%;
+    width:350px;
+    border:solid 3px red;
+    padding:5px;
+    color:red;
+    font-size:10px;
+}
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script type="text/javascript">
+"use strict";
+
+
+var globalCounter = 0;
+
+
+function checkTruthCharacters(elementObj) {
+    var trueOrFalse =  /^[a-zA-Z\s]*$/.test(elementObj.value);
+    return trueOrFalse;
+}
+
+
+function checkTruthDigits(elementObj) {
+    var trueOrFalse = /^\d+$/.test(elementObj.value);
+    return trueOrFalse;
+}
+
+
+function alertMessage(messageObject) {
+    alert(messageObject); 
+    return true;
+}
+
+
+/* here are the function for all the values */
+function totalInputElements() {
+    return document.testFormResponse.length;
+}
+
+function nameOfPerson() {
+    return document.testFormResponse.nameOfPerson.value;
+}
+
+function birth() {
+    return document.testFormResponse.birth.value;
+}
+
+function age() {
+    return document.testFormResponse.age.value;
+}
+
+function spending() {
+    return document.testFormResponse.spending.value;
+}
+
+function salary() {
+    return document.testFormResponse.salary.value;
+}
+
+function retire() {
+    return document.testFormResponse.retire.value;
+}
+
+function retirementMoney() {
+    return document.testFormResponse.retirementMoney.value;
+}
+
+function salaryPerYear() {
+    return salary() * 12;
+}
+
+function spendingPerYear() {
+    return spending() * 12;
+}
+
+function ageDifference() {
+    return retire() - age();
+}
+
+function incomeDifference() {
+    return salaryPerYear() - spendingPerYear();
+}
+
+function confirmedSavingsByRetirement() {
+    return incomeDifference() * ageDifference();
+}
+
+function shortChange() {
+    return retirementMoney() - confirmedSavingsByRetirement();
+}
+
+function yearsNeeded() {
+    return shortChange() / 12;
+}
+
+function excessMoney() {
+    return confirmedSavingsByRetirement() - retirementMoney();
+}
+
+/* end of functions that calculates the values */
+
+/* core functions follows from here */
+function debuggingMessages(functionName, objectCalled, message){
+    var elementName;
+    if(objectCalled.name){
+        elementName = objectCalled.name;
+    }
+    else if(objectCalled.id){
+        elementName = objectCalled.id;
+    }
+    else{
+        elementName = message;
+    }
+     
+    var element = document.getElementById("debugging");
+    
+    element.innerHTML += "Function name :" +functionName+ "<br>element :" +elementName+"<br>Message :" + message + "<br>";
+}
+function buildFinalResponse(name, retiring, yearsNeeded, retire, shortChange) {
+    debuggingMessages("buildFinalResponse", -1, "no messages");
+    var element = document.getElementById("finalResponse");
+    if (retiring === false) {
+        element.innerHTML += "<p>Hi <b>" + name + "<\/b>,<\/p>";
+        element.innerHTML += "<p>We've processed your information and we have noticed a problem.<\/p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will not be able to retire by <b>" + retire + " <\/b> years old.<\/p>";
+        element.innerHTML += "<p>You need to make another <b>" + shortChange + "<\/b> dollars before you retire inorder to achieve our goal<\/p>";
+        element.innerHTML += "<p>You either have to increase your income or decrease your spending.<\/p>";
+    }
+    else {
+        // able to retire but....
+        //alertMessage("retiring === true");      
+        element.innerHTML += "<p>Hi <b>" + name + "<\/b>,<\/p>";
+        element.innerHTML += "<p>We've processed your information and are pleased to announce that you will be able to retire on time.<\/p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will be able to retire by <b>" + retire + "<\/b>years old.<\/p>";
+        element.innerHTML += "<p>Also, you'll have <b>" + shortChange + "<\/b> amount of excess cash when you retire.<\/p>";
+        element.innerHTML += "<p>Congrats!<\/p>";
+    }
+}
+function checkForm(formObj) {
+
+    if (incomeDifference() <= 0) {
+        buildFinalResponse(nameOfPerson, -1, -1, -1, incomeDifference);
+        return true;
+    }
+    else {
+        if (confirmedSavingsByRetirement() <= retirementMoney()) {
+            //alertMessage(shortChange());
+            buildFinalResponse(nameOfPerson(), false, yearsNeeded(), retire(), shortChange());
+            return true;
+        }
+        else {
+            //alertMessage(excessMoney());
+            buildFinalResponse(nameOfPerson(), true, -1, retire(), excessMoney());
+            return true;
+        }
+    }
+}
+
+function addResponseElement(messageValue, idName) {
+    globalCounter = globalCounter + 1;
+    debuggingMessages("addResponseElement", "empty", "object is a value");
+    document.getElementById('formSubmit').innerHTML += "<input type=\"text\" value=\"" + messageValue + "\"name = \"" + idName + "\" /><br>";
+    if (globalCounter === 7) {
+        document.getElementById('formSubmit').innerHTML += "<input type=\"submit\" value=\"Submit\" />";
+    }
+}
+
+function submitValues(elementObj) {
+    debuggingMessages("submitValues", elementObj, "empty");
+    // check to see if the input is empty
+    var characters =  /^[a-zA-Z\s]*$/.test(elementObj.value);
+    var digits = /^\d+$/.test(elementObj.value);
+    if (elementObj.value === "") {
+        alertMessage("input is empty");
+        return false;
+    }
+    // input is not relevant; we need a digit for input elements with name "enterNumber"
+    else if (elementObj.name === "enterNumber" && digits === false) {
+        alertMessage("the input must be a digit!");
+        debuggingMessages("submitValues", elementObj, "wrong input");
+        return false;
+    }
+    // input is not relevant; we need a digit for input elements with name "enterNumber"
+    else if (elementObj.name === "enterText" && characters === false) {
+        alertMessage("the input must be characters only!");
+        return false;
+    }
+    // theinput seems to have no problem, so we'll process the input
+    else {
+        elementObj.disabled = true;
+        addResponseElement(elementObj.value, elementObj.id);
+        return true;
+    }
+}
+
+jQuery(document).ready(function () {
+    jQuery('#nameOfPerson').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#birth').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#age').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#spending').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#salary').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#retire').blur(function () {
+        submitValues(this);
+    });
+    jQuery('#retirementMoney').blur(function () {
+        submitValues(this);
+    });
+    
+    jQuery('#formSubmit').submit(function () {
+        checkForm(this);
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div id="container">
+
+    <div id="left">
+
+    <h3>Enter your information here</h3>
+
+        <form name="testForm" >
+
+            <input type="text" name="enterText" id="nameOfPerson" size="50"  value="Enter your name"/><br>
+
+            <input type="text" name="enterText" id="birth" size="50"  value="Enter your place of birth"/><br>
+
+            <input type="text" name="enterNumber" id="age" size="50" maxlength="2" value="Enter your age"/><br>
+
+            <input type="text" name="enterNumber" id="spending" size="50" value="Enter your spending per month"/><br>
+
+            <input type="text" name="enterNumber" id="salary" size="50" value="Enter your salary per month"/><br>
+
+            <input type="text" name="enterNumber" id="retire" size="50" maxlength="3" value="Enter your the age you wish to retire at" /><br>           
+
+            <input type="text" name="enterNumber" id="retirementMoney" size="50" value="Enter the amount of money you wish to have for retirement"/><br>
+
+        </form>
+
+    </div>
+
+    <div id="right">
+
+    <h3>Response</h3>
+
+        <form name="testFormResponse" id="formSubmit">
+
+            
+
+        </form>     
+
+    </div>
+
+    <div id="finalResponse"><h3>Final response: </h3></div>
+
+    
+
+</div>
+
+<div id="debugging"><h3>Debugging messages: </h3></div>
+
+</body>
+
+</html>
+

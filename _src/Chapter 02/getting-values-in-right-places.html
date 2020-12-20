@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Getting the right values</title>
+<style>
+input{
+    padding:5px;
+    margin:5px;
+    font-size:10px;
+}
+
+.shown{
+    display:none;
+}
+.response{
+    padding:5px;
+    margin:5px;
+    width:inherit;
+    color:red;
+    font-size:16px;
+    float:left;    
+}
+#container{
+    position:absolute;
+    width:800px;
+    padding:5px;
+    border: 2px solid black;
+    height:430px;
+}
+#left{    
+    height:inherit;
+    width:370px; 
+    border-right:2px solid black;
+    float:left;  
+    padding:5px;
+}
+
+#right{
+    height:inherit;    
+    width:300px;
+    float:left;
+    padding:5px;
+}
+#bottom{
+    float:left;
+    bottom:5px;
+    padding:5px;
+}
+
+#finalResponse{
+    float:left;
+    width:780px;
+    height:250px;
+    border:3px solid blue;
+    padding:5px;
+}
+
+/* this is for debugging messages */
+#debugging{
+    float:left;
+    margin-left:820px;
+    height:95%;
+    width:350px;
+    border:solid 3px red;
+    padding:5px;
+    color:red;
+    font-size:10px;
+}
+</style>
+
+<script>
+/*
+In this example, we'll learn how to access values from forms and than manipulate them.
+
+You'll learn techniques as to how to access values from form input.
+*/
+var globalCounter = 0;
+function submitValues(elementObj){
+    // using regular expressions here to check for digits
+    var digits = /^\d+$/.test(elementObj.value);
+
+
+    // using regular expressions here to check for characters which inlcudes spaces as well
+    var letters =  /^[a-zA-Z\s]$/.test(elementObj.value);
+
+    // check to see if the input is empty
+    if(elementObj.value==""){
+        alert("input is empty");
+        return false;
+    }
+    // input is not relevant; we need a digit for input elements with name "enterNumber"
+    else if(elementObj.name == "enterNumber" && digits == false){
+        alert("the input must be a digit!");
+        
+        return false;
+    }
+    // input is not relevant; we need a digit for input elements with name "enterNumber"
+    else if(elementObj.name == "enterText" && letters == false){
+        alert("the input must be characters only!");
+        return false;
+    }
+    // theinput seems to have no problem, so we'll process the input
+    else{
+        elementObj.disabled = true;
+        addResponseElement(elementObj.value,elementObj.id);
+        return true;
+        
+    }
+       
+}
+
+function addResponseElement(messageValue, idName){
+    globalCounter++;
+    var totalInputElements = document.testForm.length;
+    var container = document.getElementById('formSubmit');
+    container.innerHTML += "<input type=\"text\" value=\"" +messageValue+ "\"name=\""+idName+"\" /><br>";
+    if(globalCounter == totalInputElements){
+        container.innerHTML += "<input type=\"submit\" value=\"Submit\" />";
+    }
+}
+
+function checkForm(formObj){
+    var totalInputElements = document.testFormResponse.length;    
+    var nameOfPerson = document.testFormResponse.nameOfPerson.value;
+    var birth = document.testFormResponse.birth.value;
+    var age = document.testFormResponse.age.value;  
+    var spending = document.testFormResponse.spending.value;
+    var salary = document.testFormResponse.salary.value; 
+    var retire = document.testFormResponse.retire.value;
+    var retirementMoney = document.testFormResponse.retirementMoney.value;
+    var confirmedSavingsByRetirement;
+    var ageDifference = retire - age; // how much more time can the user have to prepare for retirement
+    var salaryPerYear = salary * 12; // salary per year
+    var spendingPerYear = spending * 12; // salary per year
+    
+    // income per year, can be negative
+    // if negative means cannot retire
+    // need to either increase spending
+    // or decrease spending
+    var incomeDifference = salaryPerYear - spendingPerYear;
+    
+    if(incomeDifference <= 0){
+        buildFinalResponse(nameOfPerson,-1,-1,-1,incomeDifference);
+        return true;
+    }
+    else{
+        // income is positive, and there is chance of retirement
+        confirmedSavingsByRetirement = incomeDifference * ageDifference;
+        if(confirmedSavingsByRetirement <= retirementMoney){
+            var shortChange = retirementMoney - confirmedSavingsByRetirement;
+            var yearsNeeded = shortChange/12;
+            buildFinalResponse(nameOfPerson,false,yearsNeeded,retire,shortChange);
+            return true;
+        }
+        else{
+            var excessMoney = confirmedSavingsByRetirement - retirementMoney;
+            buildFinalResponse(name,true,-1,retire,excessMoney);
+            return true;
+        }
+    }
+}
+
+function buildFinalResponse(name,retiring,yearsNeeded,retire, shortChange){
+    var element = document.getElementById("finalResponse");
+    if(retiring == false){
+        element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and we have noticed a problem.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will not be able to retire by <b>" + retire + " </b> years old.</p>";
+        element.innerHTML += "<p>You need to make another <b>" + shortChange + "</b> dollars before you retire inorder to acheive our goal</p>";
+        element.innerHTML += "<p>You either have to increase your income or decrease your spending.<p>";
+    }
+    /*
+    else if(retiring == -1){
+        element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and we have noticed HUGE problem.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will not be able to retire by <b>" + retire + " </b> years old.</p>";
+        element.innerHTML += "<p>This is because you spend more money than you make. You spend <b>" + shortChange + "</b> in excess of what you make</p>";
+        element.innerHTML += "<p>You either have to increase your income or decrease your spending.<p>";
+    }
+    */
+    else{
+        // able to retire but....      
+        element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and are pleased to announce that you will be able to retire on time.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will be able to retire by <b>" + retire + "</b> years old.</p>";
+        element.innerHTML += "<p>Also, you'll have <b>" + shortChange + "</b> amount of excess cash when you retire.</p>";
+        element.innerHTML += "<p>Congrats!<p>";
+    }
+}
+
+</script>
+<body>
+
+<div id="container">
+    <div id="left">
+    <h3>Enter your information here</h3>
+        <form name="testForm" >
+            <input type="text" name="enterText" id="nameOfPerson" onblur="submitValues(this)" size="50"  value="Enter your name"/><br>
+            <input type="text" name="enterText" id="birth" onblur="submitValues(this)" size="50"  value="Enter your place of birth"/><br>
+            <input type="text" name="enterNumber" id="age" onblur="submitValues(this)" size="50" maxlength="2" value="Enter your age"/><br>
+            <input type="text" name="enterNumber" id="spending" onblur="submitValues(this)" size="50" value="Enter your spending per month"/><br>
+            <input type="text" name="enterNumber" id="salary" onblur="submitValues(this)" size="50" value="Enter your salary per month"/><br>
+            <input type="text" name="enterNumber" id="retire" onblur="submitValues(this)" size="50" maxlength="3" value="Enter your age you wish to retire at" /><br>
+            
+            <input type="text" name="enterNumber" id="retirementMoney" onblur="submitValues(this)" size="50" value="Enter the amount of money you wish to have for retirement"/><br>
+
+        </form>
+    </div>
+    <div id="right">
+    <h3>Response</h3>
+        <form name="testFormResponse" id="formSubmit" onsubmit="checkForm(this);return false">
+            
+        </form>     
+    </div>
+    <div id="finalResponse"><h3>Final response: </h3></div>
+    
+</div>
+</body>
+</html>

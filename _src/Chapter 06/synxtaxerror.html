@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+try {
+    var myDate=new Date();
+    myDate.setFullYear();
+    throw new SyntaxError();    
+}
+catch (error) { 
+    alert(error); 
+    alert(error.message);
+    alert(error.name);
+}
+finally {
+    alert("ok, all is done!");
+}
+</script>
+</head>
+<body>
+</body>
+</html>

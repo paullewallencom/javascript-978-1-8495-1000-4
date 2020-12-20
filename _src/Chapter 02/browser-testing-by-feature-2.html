@@ -1,0 +1,14 @@
+<html>
+<head><title>Testing browser capabilities using .hasFeature() - Example 2</title></head>
+<body>
+<script>
+var hasCore = document.implementation.hasFeature("Core","2.0");
+if(hasCore){
+    document.write("Core is supported, perform code based on the feature<br>");
+}
+else{
+    document.write("Feature is not supported, do alternative code to enable your program<br>");
+}
+</script>
+</body>
+</html>

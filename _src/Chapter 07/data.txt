@@ -1,0 +1,1257 @@
+
+                            Venkman Profile Report
+
+Created .......... Thu May 20 2010 01:52:57 GMT+0800 (Taipei Standard Time)
+User Agent ....... Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729)
+Debugger Version . Venkman 0.9.87.4 [Mozilla rv:1.9.2.3/3]
+Sorted By ........ total
+
+=================================================================================
+0 <XStringBundle>
+
+  XStringBundle: 25 - 50 milliseconds
+    Function Name: getString  (Lines 14 - 23)
+    Total Calls: 13 (max recurse 0)
+    Total Time: 26.21 (min/max/avg 0.04/4.01/2.02)
+    Time (ex. calls): 18.34 (min/max/avg 0.03/3.01/1.41)
+
+  -------------------------------------------------------------------------------
+
+  XStringBundle: 7.5 - 10 milliseconds
+    Function Name: get_stringBundle  (Lines 44 - 58)
+    Total Calls: 13 (max recurse 0)
+    Total Time: 7.87 (min/max/avg 0.01/1/0.61)
+    Time (ex. calls): 7.87 (min/max/avg 0.01/1/0.61)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+1 <chrome://browser/content/browser.xul>
+
+  browser.xul: 0.21 - 0.25 milliseconds
+    Function Name: onclick  (Lines 1 - 2)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.21 (min/max/avg 0.21/0.21/0.21)
+    Time (ex. calls): 0.21 (min/max/avg 0.21/0.21/0.21)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+2 <chrome://browser/content/browser.xul>
+
+  browser.xul: 0.11 - 0.25 milliseconds
+    Function Name: onpopupshowing  (Lines 1 - 2)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.11 (min/max/avg 0.11/0.11/0.11)
+    Time (ex. calls): 0.11 (min/max/avg 0.11/0.11/0.11)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+3 <chrome://browser/content/browser.xul>
+
+  browser.xul: 0.25 - 0.5 milliseconds
+    Function Name: onclick  (Lines 1 - 2)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.25 (min/max/avg 0.25/0.25/0.25)
+    Time (ex. calls): 0.25 (min/max/avg 0.25/0.25/0.25)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+4 <chrome://browser/content/tabbrowser.xml>
+
+  tabbrowser.xml: 0.25 - 0.5 milliseconds
+    Function Name: onxblTabSelect  (Lines 3128 - 3129)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.38 (min/max/avg 0.38/0.38/0.38)
+    Time (ex. calls): 0.38 (min/max/avg 0.38/0.38/0.38)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+5 <chrome://browser/content/tabbrowser.xml>
+
+  tabbrowser.xml: 0.25 - 0.5 milliseconds
+    Function Name: onxblmouseout  (Lines 3225 - 3229)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.31 (min/max/avg 0.31/0.31/0.31)
+    Time (ex. calls): 0.31 (min/max/avg 0.31/0.31/0.31)
+
+  -------------------------------------------------------------------------------
+
+  tabbrowser.xml: 0.08 - 0.25 milliseconds
+    Function Name: onxblmouseover  (Lines 3220 - 3224)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.08 (min/max/avg 0.08/0.08/0.08)
+    Time (ex. calls): 0.08 (min/max/avg 0.08/0.08/0.08)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+6 <chrome://browser/content/tabbrowser.xml>
+
+  tabbrowser.xml: 0.5 - 0.75 milliseconds
+    Function Name: onxblmouseup  (Lines 3252 - 3254)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.63 (min/max/avg 0.63/0.63/0.63)
+    Time (ex. calls): 0.63 (min/max/avg 0.63/0.63/0.63)
+
+  -------------------------------------------------------------------------------
+
+  tabbrowser.xml: 0.22 - 0.25 milliseconds
+    Function Name: onxblmousedown  (Lines 3233 - 3242)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.22 (min/max/avg 0.22/0.22/0.22)
+    Time (ex. calls): 0.22 (min/max/avg 0.22/0.22/0.22)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+7 <chrome://global/content/bindings/autocomplete.xml>
+
+  autocomplete.xml: 0.08 - 0.25 milliseconds
+    Function Name: onxblpopuphiding  (Lines 808 - 829)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.08 (min/max/avg 0.08/0.08/0.08)
+    Time (ex. calls): 0.08 (min/max/avg 0.08/0.08/0.08)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+8 <chrome://global/content/bindings/browser.xml>
+
+  browser.xml: 1 - 2.5 milliseconds
+    Function Name: __toplevel__  (Lines 627 - 661)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+9 <chrome://global/content/bindings/browser.xml>
+
+  browser.xml: 0.18 - 0.25 milliseconds
+    Function Name: onxblmousedown  (Lines 1072 - 1082)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.18 (min/max/avg 0.18/0.18/0.18)
+    Time (ex. calls): 0.18 (min/max/avg 0.18/0.18/0.18)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+10 <chrome://global/content/bindings/popup.xml>
+
+  popup.xml: 0.25 - 0.5 milliseconds
+    Function Name: onxblpopupshowing  (Lines 177 - 193)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.37 (min/max/avg 0.37/0.37/0.37)
+    Time (ex. calls): 0.37 (min/max/avg 0.37/0.37/0.37)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+11 <chrome://global/content/bindings/toolbar.xml>
+
+  toolbar.xml: 0.75 - 1 milliseconds
+    Function Name: onxblDOMMenuItemInactive  (Lines 493 - 494)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 0.85 (min/max/avg 0.1/0.28/0.17)
+    Time (ex. calls): 0.85 (min/max/avg 0.1/0.28/0.17)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+12 <chrome://global/content/bindings/toolbar.xml>
+
+  toolbar.xml: 1 - 2.5 milliseconds
+    Function Name: onxblDOMMenuBarInactive  (Lines 484 - 490)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+  toolbar.xml: 0.25 - 0.5 milliseconds
+    Function Name: onxblDOMMenuBarActive  (Lines 474 - 482)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.36 (min/max/avg 0.36/0.36/0.36)
+    Time (ex. calls): 0.36 (min/max/avg 0.36/0.36/0.36)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+13 <chrome://global/content/bindings/tree.xml>
+
+  tree.xml: 0.25 - 0.5 milliseconds
+    Function Name: __toplevel__  (Lines 1129 - 1131)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.42 (min/max/avg 0.42/0.42/0.42)
+    Time (ex. calls): 0.42 (min/max/avg 0.42/0.42/0.42)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+14 <chrome://global/content/bindings/tree.xml>
+
+  tree.xml: 1 - 2.5 milliseconds
+    Function Name: onxblblur  (Lines 695 - 696)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+15 <chrome://venkman/content/venkman.xul>
+
+  venkman.xul: 2500 - 5000 milliseconds
+    Function Name: oncommand  (Lines 1 - 2)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 4326.8 (min/max/avg 4326.8/4326.8/4326.8)
+    Time (ex. calls): 4326.8 (min/max/avg 4326.8/4326.8/4326.8)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+16 <file:/C:/Documents%20and%20Settings/eugene/Application%20Data/Mozilla/Firefox/Profiles/rxcn1l7f.default/extensions/%7Bf13b157f-b174-47e7-a34d-4815ddfdfeb8%7D/components/venkman-service.js>
+
+  venkman-service.js: 1 - 2.5 milliseconds
+    Function Name: handler_handle  (Lines 154 - 165)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+17 <file:/C:/Documents%20and%20Settings/eugene/Desktop/JavaScript-testing%20book/0004_chapter7/978-1-18949510-4_07_Code/example.html>
+
+  example.html: 1 - 2.5 milliseconds
+    Function Name: formSubmit  (Lines 120 - 135)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 2.09 (min/max/avg 2.09/2.09/2.09)
+    Time (ex. calls): 0.23 (min/max/avg 0.23/0.23/0.23)
+
+    Function Name: buildContent  (Lines 100 - 116)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 1.82 (min/max/avg 0.22/1.14/0.45)
+    Time (ex. calls): 1.82 (min/max/avg 0.22/1.14/0.45)
+
+  -------------------------------------------------------------------------------
+
+  example.html: 0.01 - 0.25 milliseconds
+    Function Name: add  (Lines 85 - 87)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.01 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.01 (min/max/avg 0.01/0.01/0.01)
+
+    Function Name: minus  (Lines 89 - 91)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.01 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.01 (min/max/avg 0.01/0.01/0.01)
+
+    Function Name: multiply  (Lines 93 - 95)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.01 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.01 (min/max/avg 0.01/0.01/0.01)
+
+    Function Name: divide  (Lines 96 - 98)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.01 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.01 (min/max/avg 0.01/0.01/0.01)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+18 <file:/C:/Documents%20and%20Settings/eugene/Desktop/JavaScript-testing%20book/0004_chapter7/978-1-18949510-4_07_Code/example.html>
+
+  example.html: 1 - 2.5 milliseconds
+    Function Name: onsubmit  (Lines 1 - 2)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 2.16 (min/max/avg 2.16/2.16/2.16)
+    Time (ex. calls): 0.07 (min/max/avg 0.07/0.07/0.07)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+19 <file:/C:/Program%20Files/Mozilla%20Firefox/components/jsconsole-clhandler.js>
+
+  jsconsole-clhandler.js: 1 - 2.5 milliseconds
+    Function Name: clh_handle  (Lines 8 - 26)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+20 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsBrowserContentHandler.js>
+
+  nsBrowserContentHandler.js: 75 - 100 milliseconds
+    Function Name: dch_handle  (Lines 684 - 783)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 88.28 (min/max/avg 88.28/88.28/88.28)
+    Time (ex. calls): 3.01 (min/max/avg 3.01/3.01/3.01)
+
+    Function Name: handURIToExistingBrowser  (Lines 639 - 661)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 83.27 (min/max/avg 83.27/83.27/83.27)
+    Time (ex. calls): 28.56 (min/max/avg 28.56/28.56/28.56)
+
+  -------------------------------------------------------------------------------
+
+  nsBrowserContentHandler.js: 7.5 - 10 milliseconds
+    Function Name: getMostRecentBrowserWindow  (Lines 226 - 230)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 9.63 (min/max/avg 9.63/9.63/9.63)
+    Time (ex. calls): 0.63 (min/max/avg 0.63/0.63/0.63)
+
+  -------------------------------------------------------------------------------
+
+  nsBrowserContentHandler.js: 1 - 2.5 milliseconds
+    Function Name: resolveURIInternal  (Lines 48 - 77)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 2.01 (min/max/avg 2.01/2.01/2.01)
+    Time (ex. calls): 2.01 (min/max/avg 2.01/2.01/2.01)
+
+    Function Name: bch_QI  (Lines 282 - 292)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 2.01 (min/max/avg 1/1/1)
+    Time (ex. calls): 2.01 (min/max/avg 1/1/1)
+
+    Function Name: bch_validate  (Lines 608 - 620)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 2.01 (min/max/avg 2.01/2.01/2.01)
+    Time (ex. calls): 2.01 (min/max/avg 2.01/2.01/2.01)
+
+    Function Name: bch_handle  (Lines 295 - 470)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+  nsBrowserContentHandler.js: 0.25 - 0.5 milliseconds
+    Function Name: shouldLoadURI  (Lines 39 - 46)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.28 (min/max/avg 0.28/0.28/0.28)
+    Time (ex. calls): 0.28 (min/max/avg 0.28/0.28/0.28)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+21 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsContentPrefService.js>
+
+  nsContentPrefService.js: 25 - 50 milliseconds
+    Function Name: ContentPrefService_getPref  (Lines 130 - 137)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 33.57 (min/max/avg 0.46/17.05/8.39)
+    Time (ex. calls): 9.26 (min/max/avg 0.03/5.02/2.31)
+
+  -------------------------------------------------------------------------------
+
+  nsContentPrefService.js: 10 - 25 milliseconds
+    Function Name: ContentPrefService__selectPref  (Lines 379 - 394)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 18.5 (min/max/avg 0.45/9.03/6.17)
+    Time (ex. calls): 10.4 (min/max/avg 0.36/5.02/3.47)
+
+  -------------------------------------------------------------------------------
+
+  nsContentPrefService.js: 7.5 - 10 milliseconds
+    Function Name: ContentPrefService_get__stmtSelectPref  (Lines 365 - 377)
+    Total Calls: 12 (max recurse 0)
+    Total Time: 8.11 (min/max/avg 0.01/1/0.68)
+    Time (ex. calls): 8.11 (min/max/avg 0.01/1/0.68)
+
+  -------------------------------------------------------------------------------
+
+  nsContentPrefService.js: 1 - 2.5 milliseconds
+    Function Name: HostnameGrouper_group  (Lines 982 - 1018)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 2.25 (min/max/avg 0.24/1/0.75)
+    Time (ex. calls): 2.25 (min/max/avg 0.24/1/0.75)
+
+    Function Name: ContentPrefService_get_grouper  (Lines 349 - 354)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 2.06 (min/max/avg 0.05/1/0.69)
+    Time (ex. calls): 2.06 (min/max/avg 0.05/1/0.69)
+
+  -------------------------------------------------------------------------------
+
+  nsContentPrefService.js: 0.25 - 0.5 milliseconds
+    Function Name: ContentPrefService__selectGlobalPref  (Lines 410 - 424)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.43 (min/max/avg 0.43/0.43/0.43)
+    Time (ex. calls): 0.22 (min/max/avg 0.22/0.22/0.22)
+
+  -------------------------------------------------------------------------------
+
+  nsContentPrefService.js: 0.21 - 0.25 milliseconds
+    Function Name: ContentPrefService_get__stmtSelectGlobalPref  (Lines 397 - 408)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.21 (min/max/avg 0.01/0.19/0.07)
+    Time (ex. calls): 0.04 (min/max/avg 0.01/0.02/0.01)
+
+    Function Name: ContentPrefService__dbCreateStatement  (Lines 782 - 797)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.17 (min/max/avg 0.17/0.17/0.17)
+    Time (ex. calls): 0.17 (min/max/avg 0.17/0.17/0.17)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+22 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsDefaultCLH.js>
+
+  nsDefaultCLH.js: 1 - 2.5 milliseconds
+    Function Name: clh_handle  (Lines 49 - 124)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+23 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsFormAutoComplete.js>
+
+  nsFormAutoComplete.js: 2.5 - 5 milliseconds
+    Function Name: anonymous  (Lines 181 - 234)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 3.34 (min/max/avg 1/2.35/1.67)
+    Time (ex. calls): 0.87 (min/max/avg 0.4/0.46/0.43)
+
+    Function Name: anonymous  (Lines 460 - 463)
+    Total Calls: 12 (max recurse 0)
+    Total Time: 2.72 (min/max/avg 0.02/1.43/0.23)
+    Time (ex. calls): 1.97 (min/max/avg 0.01/1.39/0.16)
+
+    Function Name: anonymous  (Lines 455 - 458)
+    Total Calls: 12 (max recurse 0)
+    Total Time: 2.57 (min/max/avg 0.02/0.74/0.21)
+    Time (ex. calls): 1.83 (min/max/avg 0.02/0.52/0.15)
+
+  -------------------------------------------------------------------------------
+
+  nsFormAutoComplete.js: 1 - 2.5 milliseconds
+    Function Name: anonymous  (Lines 436 - 440)
+    Total Calls: 50 (max recurse 0)
+    Total Time: 2.44 (min/max/avg 0.01/0.43/0.05)
+    Time (ex. calls): 2.44 (min/max/avg 0.01/0.43/0.05)
+
+    Function Name: anonymous  (Lines 236 - 338)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 2.2 (min/max/avg 0.3/1.9/1.1)
+    Time (ex. calls): 1.34 (min/max/avg 0.21/1.13/0.67)
+
+    Function Name: anonymous  (Lines 441 - 443)
+    Total Calls: 38 (max recurse 0)
+    Total Time: 1.78 (min/max/avg 0/0.28/0.05)
+    Time (ex. calls): 1.78 (min/max/avg 0/0.28/0.05)
+
+    Function Name: anonymous  (Lines 416 - 419)
+    Total Calls: 36 (max recurse 0)
+    Total Time: 1.68 (min/max/avg 0.01/0.39/0.05)
+    Time (ex. calls): 1.68 (min/max/avg 0.01/0.39/0.05)
+
+    Function Name: FormAutoComplete  (Lines 44 - 46)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1.07 (min/max/avg 1.07/1.07/1.07)
+    Time (ex. calls): 0.25 (min/max/avg 0.25/0.25/0.25)
+
+  -------------------------------------------------------------------------------
+
+  nsFormAutoComplete.js: 0.75 - 1 milliseconds
+    Function Name: anonymous  (Lines 343 - 358)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.86 (min/max/avg 0.09/0.78/0.43)
+    Time (ex. calls): 0.79 (min/max/avg 0.09/0.7/0.39)
+
+    Function Name: NSGetModule  (Lines 476 - 478)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.86 (min/max/avg 0.86/0.86/0.86)
+    Time (ex. calls): 0.31 (min/max/avg 0.31/0.31/0.31)
+
+    Function Name: anonymous  (Lines 89 - 108)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.82 (min/max/avg 0.82/0.82/0.82)
+    Time (ex. calls): 0.51 (min/max/avg 0.51/0.51/0.51)
+
+  -------------------------------------------------------------------------------
+
+  nsFormAutoComplete.js: 0.5 - 0.75 milliseconds
+    Function Name: anonymous  (Lines 445 - 448)
+    Total Calls: 12 (max recurse 0)
+    Total Time: 0.69 (min/max/avg 0.02/0.19/0.06)
+    Time (ex. calls): 0.49 (min/max/avg 0.02/0.16/0.04)
+
+  -------------------------------------------------------------------------------
+
+  nsFormAutoComplete.js: 0.15 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 163 - 168)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 0.15 (min/max/avg 0.01/0.07/0.03)
+    Time (ex. calls): 0.15 (min/max/avg 0.01/0.07/0.03)
+
+    Function Name: anonymous  (Lines 63 - 68)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.13 (min/max/avg 0.01/0.06/0.04)
+    Time (ex. calls): 0.13 (min/max/avg 0.01/0.06/0.04)
+
+    Function Name: anonymous  (Lines 360 - 367)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.1 (min/max/avg 0.1/0.1/0.1)
+    Time (ex. calls): 0.1 (min/max/avg 0.1/0.1/0.1)
+
+    Function Name: anonymous  (Lines 71 - 76)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.09 (min/max/avg 0.09/0.09/0.09)
+    Time (ex. calls): 0.09 (min/max/avg 0.09/0.09/0.09)
+
+    Function Name: FormAutoCompleteResult  (Lines 400 - 405)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.07 (min/max/avg 0.01/0.05/0.03)
+    Time (ex. calls): 0.07 (min/max/avg 0.01/0.05/0.03)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+24 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsLivemarkService.js>
+
+  nsLivemarkService.js: 1 - 2.5 milliseconds
+    Function Name: LS_getLivemarkIdForFeedURI  (Lines 720 - 730)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 1.58 (min/max/avg 0.09/1/0.53)
+    Time (ex. calls): 1.58 (min/max/avg 0.09/1/0.53)
+
+    Function Name: LS_QueryInterface  (Lines 841 - 848)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 1.57 (min/max/avg 0.57/1/0.79)
+    Time (ex. calls): 1.57 (min/max/avg 0.57/1/0.79)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+25 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsLoginManager.js>
+
+  nsLoginManager.js: 25 - 50 milliseconds
+    Function Name: anonymous  (Lines 237 - 250)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 31.77 (min/max/avg 31.77/31.77/31.77)
+    Time (ex. calls): 0.14 (min/max/avg 0.14/0.14/0.14)
+
+    Function Name: anonymous  (Lines 820 - 958)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 31.57 (min/max/avg 31.57/31.57/31.57)
+    Time (ex. calls): 0.27 (min/max/avg 0.27/0.27/0.27)
+
+    Function Name: anonymous  (Lines 560 - 566)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 30.02 (min/max/avg 30.02/30.02/30.02)
+    Time (ex. calls): 0.24 (min/max/avg 0.24/0.24/0.24)
+
+    Function Name: anonymous  (Lines 98 - 124)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 29.19 (min/max/avg 29.19/29.19/29.19)
+    Time (ex. calls): 21.95 (min/max/avg 21.95/21.95/21.95)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 7.5 - 10 milliseconds
+    Function Name: anonymous  (Lines 297 - 328)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 8.37 (min/max/avg 0.02/7.02/1.67)
+    Time (ex. calls): 4.36 (min/max/avg 0.02/3.01/0.87)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 5 - 7.5 milliseconds
+    Function Name: anonymous  (Lines 351 - 395)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 5.02 (min/max/avg 5.02/5.02/5.02)
+    Time (ex. calls): 3.01 (min/max/avg 3.01/3.01/3.01)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 2.5 - 5 milliseconds
+    Function Name: anonymous  (Lines 211 - 216)
+    Total Calls: 6 (max recurse 0)
+    Total Time: 4.35 (min/max/avg 0.01/3.01/0.72)
+    Time (ex. calls): 4.35 (min/max/avg 0.01/3.01/0.72)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 1 - 2.5 milliseconds
+    Function Name: anonymous  (Lines 1012 - 1044)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 0.5 - 0.75 milliseconds
+    Function Name: anonymous  (Lines 995 - 1003)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.6 (min/max/avg 0.6/0.6/0.6)
+    Time (ex. calls): 0.2 (min/max/avg 0.2/0.2/0.2)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 966 - 993)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.46 (min/max/avg 0.06/0.41/0.23)
+    Time (ex. calls): 0.43 (min/max/avg 0.04/0.4/0.22)
+
+    Function Name: anonymous  (Lines 722 - 795)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.38 (min/max/avg 0.38/0.38/0.38)
+    Time (ex. calls): 0.03 (min/max/avg 0.03/0.03/0.03)
+
+    Function Name: anonymous  (Lines 674 - 703)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.35 (min/max/avg 0.35/0.35/0.35)
+    Time (ex. calls): 0.34 (min/max/avg 0.34/0.34/0.34)
+
+  -------------------------------------------------------------------------------
+
+  nsLoginManager.js: 0.24 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 143 - 149)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.24 (min/max/avg 0.24/0.24/0.24)
+    Time (ex. calls): 0.1 (min/max/avg 0.1/0.1/0.1)
+
+    Function Name: anonymous  (Lines 130 - 139)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.12 (min/max/avg 0.12/0.12/0.12)
+    Time (ex. calls): 0.08 (min/max/avg 0.08/0.08/0.08)
+
+    Function Name: anonymous  (Lines 70 - 75)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.03 (min/max/avg 0.01/0.02/0.01)
+    Time (ex. calls): 0.03 (min/max/avg 0.01/0.02/0.01)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+26 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsMicrosummaryService.js>
+
+  nsMicrosummaryService.js: 5 - 7.5 milliseconds
+    Function Name: anonymous  (Lines 158 - 159)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 6.48 (min/max/avg 0.47/2.44/1.3)
+    Time (ex. calls): 0.84 (min/max/avg 0.09/0.32/0.17)
+
+    Function Name: MSS__updateMicrosummaries  (Lines 172 - 198)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 5.65 (min/max/avg 0.37/2.12/1.13)
+    Time (ex. calls): 2.32 (min/max/avg 0.18/0.93/0.47)
+
+  -------------------------------------------------------------------------------
+
+  nsMicrosummaryService.js: 1 - 2.5 milliseconds
+    Function Name: anonymous  (Lines 100 - 105)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 2 (min/max/avg 0.15/0.87/0.4)
+    Time (ex. calls): 1.12 (min/max/avg 0.08/0.44/0.22)
+
+  -------------------------------------------------------------------------------
+
+  nsMicrosummaryService.js: 0.75 - 1 milliseconds
+    Function Name: anonymous  (Lines 530 - 534)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.97 (min/max/avg 0.97/0.97/0.97)
+    Time (ex. calls): 0.55 (min/max/avg 0.55/0.55/0.55)
+
+    Function Name: getPref  (Lines 2215 - 2230)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 0.87 (min/max/avg 0.07/0.44/0.17)
+    Time (ex. calls): 0.87 (min/max/avg 0.07/0.44/0.17)
+
+  -------------------------------------------------------------------------------
+
+  nsMicrosummaryService.js: 0.5 - 0.75 milliseconds
+    Function Name: anonymous  (Lines 532 - 533)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 0.5 (min/max/avg 0.05/0.19/0.1)
+    Time (ex. calls): 0.5 (min/max/avg 0.05/0.19/0.1)
+
+  -------------------------------------------------------------------------------
+
+  nsMicrosummaryService.js: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 60 - 61)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.28 (min/max/avg 0.28/0.28/0.28)
+    Time (ex. calls): 0.28 (min/max/avg 0.28/0.28/0.28)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+27 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsPlacesDBFlush.js>
+
+  nsPlacesDBFlush.js: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 263 - 264)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.32 (min/max/avg 0.32/0.32/0.32)
+    Time (ex. calls): 0.32 (min/max/avg 0.32/0.32/0.32)
+
+  -------------------------------------------------------------------------------
+
+  nsPlacesDBFlush.js: 0.21 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 264 - 265)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.21 (min/max/avg 0.21/0.21/0.21)
+    Time (ex. calls): 0.21 (min/max/avg 0.21/0.21/0.21)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+28 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsPrivateBrowsingService.js>
+
+  nsPrivateBrowsingService.js: 1 - 2.5 milliseconds
+    Function Name: PBS_handle  (Lines 391 - 396)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+  nsPrivateBrowsingService.js: 0.05 - 0.25 milliseconds
+    Function Name: PBS_get_privateBrowsingEnabled  (Lines 407 - 409)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.05 (min/max/avg 0.01/0.03/0.02)
+    Time (ex. calls): 0.05 (min/max/avg 0.01/0.03/0.02)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+29 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsSessionStore.js>
+
+  nsSessionStore.js: 50 - 75 milliseconds
+    Function Name: sss_handleEvent  (Lines 538 - 570)
+    Total Calls: 11 (max recurse 0)
+    Total Time: 58.08 (min/max/avg 0.5/23.68/5.28)
+    Time (ex. calls): 14.26 (min/max/avg 0.31/4.01/1.3)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 25 - 50 milliseconds
+    Function Name: sss_observe  (Lines 332 - 531)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 41.52 (min/max/avg 10.06/20/13.84)
+    Time (ex. calls): 0.74 (min/max/avg 0.11/0.47/0.25)
+
+    Function Name: sss_saveState  (Lines 2553 - 2571)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 40.78 (min/max/avg 9.96/19.53/13.59)
+    Time (ex. calls): 0.67 (min/max/avg 0.17/0.33/0.22)
+
+    Function Name: sss_collectTabData  (Lines 1169 - 1245)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 30.57 (min/max/avg 1.18/20.43/6.11)
+    Time (ex. calls): 13.98 (min/max/avg 0.51/9.35/2.8)
+
+    Function Name: sss_getCurrentState  (Lines 1720 - 1779)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 26.16 (min/max/avg 6.98/11.93/8.72)
+    Time (ex. calls): 1.44 (min/max/avg 0.2/1/0.48)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 10 - 25 milliseconds
+    Function Name: sss_forEachBrowserWindow  (Lines 2618 - 2629)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 23.75 (min/max/avg 6.41/10.63/7.92)
+    Time (ex. calls): 0.74 (min/max/avg 0.16/0.32/0.25)
+
+    Function Name: anonymous  (Lines 1725 - 1734)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 23.01 (min/max/avg 6.25/10.31/7.67)
+    Time (ex. calls): 0.85 (min/max/avg 0.05/0.63/0.28)
+
+    Function Name: sss_onTabClose  (Lines 797 - 830)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 22.23 (min/max/avg 22.23/22.23/22.23)
+    Time (ex. calls): 1.11 (min/max/avg 1.11/1.11/1.11)
+
+    Function Name: sss_collectWindowData  (Lines 1801 - 1812)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 21.17 (min/max/avg 5.62/9.37/7.06)
+    Time (ex. calls): 0.78 (min/max/avg 0.16/0.35/0.26)
+
+    Function Name: anonymous  (Lines 1230 - 1233)
+    Total Calls: 67 (max recurse 0)
+    Total Time: 15.04 (min/max/avg 0/2.01/0.22)
+    Time (ex. calls): 15.04 (min/max/avg 0/2.01/0.22)
+
+    Function Name: sss_saveStateObject  (Lines 2576 - 2590)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 13.95 (min/max/avg 2.8/7.27/4.65)
+    Time (ex. calls): 6.98 (min/max/avg 0.11/4.33/2.33)
+
+    Function Name: sss_saveWindowHistory  (Lines 1150 - 1159)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 11.18 (min/max/avg 2.59/5/3.73)
+    Time (ex. calls): 1.04 (min/max/avg 0.17/0.67/0.35)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 5 - 7.5 milliseconds
+    Function Name: sss_onTabSelect  (Lines 883 - 891)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 6.57 (min/max/avg 1.55/5.02/3.28)
+    Time (ex. calls): 3.58 (min/max/avg 0.57/3.01/1.79)
+
+    Function Name: sss_writeFile  (Lines 2938 - 2959)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 6.53 (min/max/avg 1.25/2.71/2.18)
+    Time (ex. calls): 3.68 (min/max/avg 0.69/1.7/1.23)
+
+    Function Name: sss_onTabLoad  (Lines 841 - 853)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 6.21 (min/max/avg 0.19/5.02/2.07)
+    Time (ex. calls): 4.2 (min/max/avg 0.19/3.01/1.4)
+
+    Function Name: sss_updateTextAndScrollDataForTab  (Lines 1459 - 1480)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 5.87 (min/max/avg 0.58/1.87/1.17)
+    Time (ex. calls): 0.67 (min/max/avg 0.09/0.17/0.13)
+
+    Function Name: sss_updateTextAndScrollData  (Lines 1432 - 1444)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 5.57 (min/max/avg 1.69/2.01/1.86)
+    Time (ex. calls): 0.28 (min/max/avg 0.03/0.14/0.09)
+
+    Function Name: sss_onTabAdd  (Lines 751 - 764)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 5.09 (min/max/avg 5.09/5.09/5.09)
+    Time (ex. calls): 2.11 (min/max/avg 2.11/2.11/2.11)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 2.5 - 5 milliseconds
+    Function Name: sss_saveStateDelayed  (Lines 2526 - 2546)
+    Total Calls: 9 (max recurse 0)
+    Total Time: 4.38 (min/max/avg 0.11/1/0.49)
+    Time (ex. calls): 3.74 (min/max/avg 0.09/1/0.42)
+
+    Function Name: sss_updateTextAndScrollDataForFrame  (Lines 1497 - 1536)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 3.82 (min/max/avg 0.31/1.42/0.76)
+    Time (ex. calls): 1.87 (min/max/avg 0.18/0.95/0.37)
+
+    Function Name: sss_onTabInput  (Lines 862 - 867)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 3.31 (min/max/avg 0.46/1.28/0.83)
+    Time (ex. calls): 2.05 (min/max/avg 0.3/0.65/0.51)
+
+    Function Name: sss_updateCrashReportURL  (Lines 2777 - 2799)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 3.04 (min/max/avg 0.27/1/0.76)
+    Time (ex. calls): 3.04 (min/max/avg 0.27/1/0.76)
+
+    Function Name: sss_updateWindowFeatures  (Lines 1692 - 1712)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 2.87 (min/max/avg 0.55/1.57/0.96)
+    Time (ex. calls): 0.83 (min/max/avg 0.13/0.45/0.28)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 1 - 2.5 milliseconds
+    Function Name: sss_collectFormDataForFrame  (Lines 1565 - 1600)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 1.58 (min/max/avg 0.49/1.08/0.79)
+    Time (ex. calls): 0.88 (min/max/avg 0.42/0.46/0.44)
+
+    Function Name: sss_isWindowLoaded  (Lines 2887 - 2889)
+    Total Calls: 6 (max recurse 0)
+    Total Time: 1.4 (min/max/avg 0.02/0.59/0.23)
+    Time (ex. calls): 1.4 (min/max/avg 0.02/0.59/0.23)
+
+    Function Name: sss_getSelectedPageStyle  (Lines 1544 - 1558)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 1.38 (min/max/avg 0.12/0.66/0.28)
+    Time (ex. calls): 1.38 (min/max/avg 0.12/0.66/0.28)
+
+    Function Name: anonymous  (Lines 1695 - 1697)
+    Total Calls: 15 (max recurse 0)
+    Total Time: 1.35 (min/max/avg 0.04/0.45/0.09)
+    Time (ex. calls): 0.69 (min/max/avg 0.02/0.44/0.05)
+
+    Function Name: sss_serializeSessionStorage  (Lines 1375 - 1424)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 1.25 (min/max/avg 0.14/0.39/0.25)
+    Time (ex. calls): 1.03 (min/max/avg 0.06/0.3/0.21)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 0.5 - 0.75 milliseconds
+    Function Name: anonymous  (Lines 1699 - 1701)
+    Total Calls: 18 (max recurse 0)
+    Total Time: 0.7 (min/max/avg 0.03/0.09/0.04)
+    Time (ex. calls): 0.7 (min/max/avg 0.03/0.09/0.04)
+
+    Function Name: sss_getWindowDimension  (Lines 2731 - 2761)
+    Total Calls: 15 (max recurse 0)
+    Total Time: 0.65 (min/max/avg 0.01/0.18/0.04)
+    Time (ex. calls): 0.65 (min/max/avg 0.01/0.18/0.04)
+
+    Function Name: sss_xph_generate  (Lines 2970 - 2995)
+    Total Calls: 4 (max recurse 1)
+    Total Time: 0.64 (min/max/avg 0/0.36/0.16)
+    Time (ex. calls): 0.51 (min/max/avg 0/0.27/0.13)
+
+    Function Name: sss_updateCookies  (Lines 1634 - 1685)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.53 (min/max/avg 0.1/0.28/0.18)
+    Time (ex. calls): 0.31 (min/max/avg 0.06/0.17/0.1)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 0.25 - 0.5 milliseconds
+    Function Name: sss_toJSONString  (Lines 2852 - 2865)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.44 (min/max/avg 0.09/0.24/0.15)
+    Time (ex. calls): 0.44 (min/max/avg 0.09/0.24/0.15)
+
+    Function Name: sss_getMostRecentBrowserWindow  (Lines 2635 - 2653)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.43 (min/max/avg 0.01/0.22/0.14)
+    Time (ex. calls): 0.43 (min/max/avg 0.01/0.22/0.14)
+
+    Function Name: sss_onTabRemove  (Lines 775 - 788)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.42 (min/max/avg 0.42/0.42/0.42)
+    Time (ex. calls): 0.19 (min/max/avg 0.19/0.19/0.19)
+
+    Function Name: sss_updateCookieHosts  (Lines 1607 - 1627)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.36 (min/max/avg 0.11/0.13/0.12)
+    Time (ex. calls): 0.1 (min/max/avg 0.01/0.04/0.03)
+
+    Function Name: sss_getURIFromString  (Lines 2768 - 2772)
+    Total Calls: 5 (max recurse 0)
+    Total Time: 0.3 (min/max/avg 0.04/0.09/0.06)
+    Time (ex. calls): 0.3 (min/max/avg 0.04/0.09/0.06)
+
+    Function Name: sss_serializeHistoryEntry  (Lines 1256 - 1361)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.29 (min/max/avg 0.29/0.29/0.29)
+    Time (ex. calls): 0.29 (min/max/avg 0.29/0.29/0.29)
+
+    Function Name: sss_checkPrivacyLevel  (Lines 2716 - 2718)
+    Total Calls: 10 (max recurse 0)
+    Total Time: 0.29 (min/max/avg 0.01/0.09/0.03)
+    Time (ex. calls): 0.29 (min/max/avg 0.01/0.09/0.03)
+
+    Function Name: anonymous  (Lines 1626 - 1627)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.26 (min/max/avg 0.03/0.09/0.07)
+    Time (ex. calls): 0.13 (min/max/avg 0.02/0.07/0.03)
+
+  -------------------------------------------------------------------------------
+
+  nsSessionStore.js: 0.22 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 1654 - 1679)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.22 (min/max/avg 0.04/0.12/0.07)
+    Time (ex. calls): 0.22 (min/max/avg 0.04/0.12/0.07)
+
+    Function Name: extractHosts  (Lines 1611 - 1623)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.13 (min/max/avg 0.02/0.06/0.03)
+    Time (ex. calls): 0.13 (min/max/avg 0.02/0.06/0.03)
+
+    Function Name: anonymous  (Lines 2952 - 2958)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.13 (min/max/avg 0.03/0.06/0.04)
+    Time (ex. calls): 0.13 (min/max/avg 0.03/0.06/0.04)
+
+    Function Name: sss_replaceLoadingTitle  (Lines 2899 - 2905)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.12 (min/max/avg 0.12/0.12/0.12)
+    Time (ex. calls): 0.02 (min/max/avg 0.02/0.02/0.02)
+
+    Function Name: sss_xph_quoteArgument  (Lines 3025 - 3029)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.09 (min/max/avg 0.01/0.06/0.02)
+    Time (ex. calls): 0.09 (min/max/avg 0.01/0.06/0.02)
+
+    Function Name: sss_xph_resolveNS  (Lines 3008 - 3010)
+    Total Calls: 6 (max recurse 0)
+    Total Time: 0.06 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.06 (min/max/avg 0.01/0.01/0.01)
+
+    Function Name: sss_xph_escapeName  (Lines 3015 - 3020)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.04 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.04 (min/max/avg 0.01/0.01/0.01)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+30 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsSetDefaultBrowser.js>
+
+  nsSetDefaultBrowser.js: 1 - 2.5 milliseconds
+    Function Name: nsSetDefault_handle  (Lines 50 - 56)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1 (min/max/avg 1/1/1)
+    Time (ex. calls): 1 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+31 <file:/C:/Program%20Files/Mozilla%20Firefox/components/nsUpdateTimerManager.js>
+
+  nsUpdateTimerManager.js: 0.25 - 0.5 milliseconds
+    Function Name: TM_registerTimer  (Lines 191 - 204)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.42 (min/max/avg 0.42/0.42/0.42)
+    Time (ex. calls): 0.42 (min/max/avg 0.42/0.42/0.42)
+
+  -------------------------------------------------------------------------------
+
+  nsUpdateTimerManager.js: 0 - 0.25 milliseconds
+    Function Name: LOG  (Lines 47 - 52)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0 (min/max/avg 0/0/0)
+    Time (ex. calls): 0 (min/max/avg 0/0/0)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+32 <file:/C:/Program%20Files/Mozilla%20Firefox/components/storage-mozStorage.js>
+
+  storage-mozStorage.js: 1 - 2.5 milliseconds
+    Function Name: anonymous  (Lines 211 - 261)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 2.19 (min/max/avg 2.19/2.19/2.19)
+    Time (ex. calls): 0.57 (min/max/avg 0.57/0.57/0.57)
+
+    Function Name: anonymous  (Lines 1310 - 1331)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 1.56 (min/max/avg 1.56/1.56/1.56)
+    Time (ex. calls): 1.51 (min/max/avg 1.51/1.51/1.51)
+
+  -------------------------------------------------------------------------------
+
+  storage-mozStorage.js: 0.5 - 0.75 milliseconds
+    Function Name: NSGetModule  (Lines 1611 - 1613)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.51 (min/max/avg 0.51/0.51/0.51)
+    Time (ex. calls): 0.2 (min/max/avg 0.2/0.2/0.2)
+
+    Function Name: anonymous  (Lines 673 - 676)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.5 (min/max/avg 0.5/0.5/0.5)
+    Time (ex. calls): 0.03 (min/max/avg 0.03/0.03/0.03)
+
+  -------------------------------------------------------------------------------
+
+  storage-mozStorage.js: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 845 - 867)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.46 (min/max/avg 0.46/0.46/0.46)
+    Time (ex. calls): 0.12 (min/max/avg 0.12/0.12/0.12)
+
+    Function Name: anonymous  (Lines 1287 - 1300)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.34 (min/max/avg 0.34/0.34/0.34)
+    Time (ex. calls): 0.33 (min/max/avg 0.33/0.33/0.33)
+
+  -------------------------------------------------------------------------------
+
+  storage-mozStorage.js: 0.05 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 91 - 97)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.05 (min/max/avg 0.05/0.05/0.05)
+    Time (ex. calls): 0.05 (min/max/avg 0.05/0.05/0.05)
+
+    Function Name: anonymous  (Lines 100 - 105)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.05 (min/max/avg 0.05/0.05/0.05)
+    Time (ex. calls): 0.05 (min/max/avg 0.05/0.05/0.05)
+
+    Function Name: anonymous  (Lines 180 - 185)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.04 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.04 (min/max/avg 0.01/0.01/0.01)
+
+    Function Name: LoginManagerStorage_mozStorage  (Lines 51 - 52)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.01 (min/max/avg 0.01/0.01/0.01)
+    Time (ex. calls): 0.01 (min/max/avg 0.01/0.01/0.01)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+33 <file:/C:/Program%20Files/Mozilla%20Firefox/modules/NetUtil.jsm>
+
+  NetUtil.jsm: 2.5 - 5 milliseconds
+    Function Name: NetUtil_asyncCopy  (Lines 79 - 128)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 2.85 (min/max/avg 0.56/1.28/0.95)
+    Time (ex. calls): 2.85 (min/max/avg 0.56/1.28/0.95)
+
+  -------------------------------------------------------------------------------
+
+  NetUtil.jsm: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 117 - 119)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.26 (min/max/avg 0.05/0.15/0.09)
+    Time (ex. calls): 0.13 (min/max/avg 0.02/0.09/0.04)
+
+  -------------------------------------------------------------------------------
+
+  NetUtil.jsm: 0.09 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 116 - 117)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 0.09 (min/max/avg 0.01/0.08/0.03)
+    Time (ex. calls): 0.09 (min/max/avg 0.01/0.08/0.03)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+34 <file:/C:/Program%20Files/Mozilla%20Firefox/modules/NetworkPrioritizer.jsm>
+
+  NetworkPrioritizer.jsm: 10 - 25 milliseconds
+    Function Name: _handleEvent  (Lines 80 - 95)
+    Total Calls: 6 (max recurse 0)
+    Total Time: 11.09 (min/max/avg 0.31/4.28/1.85)
+    Time (ex. calls): 6.33 (min/max/avg 0.12/2.02/1.06)
+
+  -------------------------------------------------------------------------------
+
+  NetworkPrioritizer.jsm: 2.5 - 5 milliseconds
+    Function Name: anonymous  (Lines 106 - 113)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 2.98 (min/max/avg 0.71/2.27/1.49)
+    Time (ex. calls): 1.21 (min/max/avg 0.18/1.03/0.61)
+
+  -------------------------------------------------------------------------------
+
+  NetworkPrioritizer.jsm: 1 - 2.5 milliseconds
+    Function Name: anonymous  (Lines 172 - 182)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 1.69 (min/max/avg 0.34/1/0.56)
+    Time (ex. calls): 1.69 (min/max/avg 0.34/1/0.56)
+
+    Function Name: anonymous  (Lines 206 - 208)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 1.27 (min/max/avg 0.21/1.06/0.64)
+    Time (ex. calls): 0.87 (min/max/avg 0.14/0.73/0.43)
+
+  -------------------------------------------------------------------------------
+
+  NetworkPrioritizer.jsm: 0.25 - 0.5 milliseconds
+    Function Name: anonymous  (Lines 210 - 215)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.41 (min/max/avg 0.07/0.34/0.21)
+    Time (ex. calls): 0.41 (min/max/avg 0.07/0.34/0.21)
+
+    Function Name: anonymous  (Lines 125 - 127)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.34 (min/max/avg 0.1/0.24/0.17)
+    Time (ex. calls): 0.18 (min/max/avg 0.04/0.14/0.09)
+
+    Function Name: anonymous  (Lines 116 - 119)
+    Total Calls: 4 (max recurse 0)
+    Total Time: 0.26 (min/max/avg 0.04/0.1/0.06)
+    Time (ex. calls): 0.26 (min/max/avg 0.04/0.1/0.06)
+
+  -------------------------------------------------------------------------------
+
+  NetworkPrioritizer.jsm: 0.15 - 0.25 milliseconds
+    Function Name: anonymous  (Lines 121 - 123)
+    Total Calls: 2 (max recurse 0)
+    Total Time: 0.15 (min/max/avg 0.07/0.08/0.07)
+    Time (ex. calls): 0.06 (min/max/avg 0.03/0.03/0.03)
+
+    Function Name: anonymous  (Lines 100 - 104)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 0.09 (min/max/avg 0.09/0.09/0.09)
+    Time (ex. calls): 0.09 (min/max/avg 0.09/0.09/0.09)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+35 <file:/C:/Program%20Files/Mozilla%20Firefox/modules/PlacesDBUtils.jsm>
+
+  PlacesDBUtils.jsm: 25 - 50 milliseconds
+    Function Name: nsPlacesDBUtils  (Lines 82 - 126)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 26.08 (min/max/avg 26.08/26.08/26.08)
+    Time (ex. calls): 24.63 (min/max/avg 24.63/24.63/24.63)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+36 <file:/C:/Program%20Files/Mozilla%20Firefox/modules/utils.js>
+
+  utils.js: 50 - 75 milliseconds
+    Function Name: PU_startPlacesDBUtils  (Lines 1917 - 1919)
+    Total Calls: 1 (max recurse 0)
+    Total Time: 50.22 (min/max/avg 50.22/50.22/50.22)
+    Time (ex. calls): 18.08 (min/max/avg 18.08/18.08/18.08)
+
+  -------------------------------------------------------------------------------
+
+  utils.js: 7.5 - 10 milliseconds
+    Function Name: PU_getMostRecentFolderForFeedURI  (Lines 1038 - 1057)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 8.48 (min/max/avg 1.24/5.02/2.83)
+    Time (ex. calls): 5.33 (min/max/avg 1.15/3.01/1.78)
+
+  -------------------------------------------------------------------------------
+
+  utils.js: 2.5 - 5 milliseconds
+    Function Name: PU_getMostRecentBookmarkForURI  (Lines 1009 - 1028)
+    Total Calls: 3 (max recurse 0)
+    Total Time: 3.01 (min/max/avg 1/1/1)
+    Time (ex. calls): 3.01 (min/max/avg 1/1/1)
+
+  -------------------------------------------------------------------------------
+
+=================================================================================
+
+
+
+Thanks for using Venkman, the Mozilla JavaScript Debugger.
+<http://www.mozilla.org/projects/venkman>

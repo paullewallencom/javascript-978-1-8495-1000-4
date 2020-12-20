@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>This is a sample title</title>
+<!-- <link  rel="stylesheet" type="text/css" href="style.css">"> ">  -->
+<style type="text/css">
+body{
+    background-color:#cccccc;
+}
+/* Here we create a CSS selector for IDs by a name preceded by a hash character */
+#container{
+    width:750px; /* this makes the width of the div element with the id 'container' to have a width of 750px */
+    height:430px;
+    border:1px solid black;solid 1px black;
+
+}
+/* #[nameOfElement] */
+#boxed1{
+    /* an example of background property */
+    background-color:#ff6600;
+    
+    /* an example of border property */
+    border:2px solid black;
+    
+    /* an example of height/width  property */
+    height:360px;
+    width:300px;
+    
+    /* an example of padding properties */
+    padding:20px;
+         
+    float:left;  
+     
+    margin:10px;
+}
+
+#boxed2{
+    /* an example of background property */
+    background-color:#ff6600;
+    
+    /* an example of border property */
+    border:2px solid black;
+    
+    /* an example of background   property */
+    height:360px;
+    width:300px;
+    
+    /* an example of padding properties */
+    padding:20px;
+      
+    /* make the element float left */   
+    float:left;  
+    
+    /* make some spacing  around the elements */
+    margin:10px;
+}
+ 
+#ordered1{
+    font-size:20px;
+    color:#ce0000;
+    text-align:center;
+}
+#unordered1{
+    font-size:12px;
+    color:#000f00;
+    
+}
+
+#ordered2{
+    font-size:20px;
+    color:#ce0000;
+    text-align:center;
+}
+#unordered2{
+    font-size:12px;
+    color:#000f00;
+    
+}
+
+#unordered2.nice{
+    font-size:16px;    
+}
+
+/* here we create a CSS class ; note the different style of naming a CSS class as compared to a CSS id 
+ * A  class selector is preceded by a full stop instead of a hash character
+*/
+.intro{
+    color:black;
+    font-weight:bold;
+}
+a:link {color:#FF0000;}      /* unvisited link */
+a:visited {color:#00FF00;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+</style>
+</head>
+<body>
+
+<h1>This is header 1</h1>
+<h2>This is header 2</h2>
+<h3>This is header 3</h3>
+<p class="intro">This is a paragraph. I am styled by a class called "intro"</p>
+<hr>
+<div id="container">
+    <div id="boxed1">I am enclosed within a <i>div</i> tag. And i I can  be styled on a document level.
+        <ol id="ordered1">
+            <li>This is an ordered list and it is centered</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ol>
+
+        <ul id="unordered1">
+            <li>This is an unordered list.</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ul>
+        
+        <a class="link" href="#">I am a link that is styled by a class</a>
+    </div>
+
+    <div id="boxed2">I am enclosed within a <i>div</i> tag. And i am styled on a local level.
+        <ol id="ordered2">
+            <li>This is an ordered list and it is centered</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ol>
+
+        <ul class="nice" id="unordered2">
+            <li>This is an unordered list  and I have a class defined</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ul>
+        
+        <a class="link" href="#">I am a link that is styled by a class</a>
+    </div>
+</div>
+</body>
+</html>

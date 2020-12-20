@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function factorial(x) {
+    if(x == 0) {
+        return 1;
+    }
+    else {
+        return x * factorial(x-1);
+    }
+               
+}
+
+try {
+    // Ask the user to enter a number
+    var a = prompt("Please enter a positive integer", "");
+    // Compute the factorial of the number, assuming that the user's
+    // input is valid
+    var f = factorial(a);
+    // Display the result
+    alert(a + "! = " + f);
+}
+catch (error) {  
+    // alert user of the 
+    alert(error);
+    alert(error.message);
+}
+finally {
+    alert("ok, all is done!");
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JavaScript Cinema</title>
+<link rel="stylesheet" type="text/css" href="cinema.css" />
+<script type="text/javascript" src="cinema.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="side-a">
+        <h1>Welcome to JavaScript Cinema </h1>
+        <div class="screen">
+            <p> Screen is located here. </p>
+        </div>
+	    <div class="wrapper">
+	         <div class="left1" id="a1" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left2" id="a2" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left3" id="a3" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left4" id="a4" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left5" id="a5" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left6" id="a6" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left7" id="a7" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left8" id="a8" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left9" id="a9" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	     </div> 
+	    <div class="wrapper">
+	         <div class="left1" id="b1" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left2" id="b2" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left3" id="b3" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left4" id="b4" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left5" id="b5" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left6" id="b6" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left7" id="b7" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left8" id="b8" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left9" id="b9" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	     </div> 
+	    <div class="wrapper">
+	         <div class="left1" id="c1" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left2" id="c2" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left3" id="c3" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left4" id="c4" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left5" id="c5" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left6" id="c6" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left7" id="c7" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left8" id="c8" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left9" id="c9" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	     </div> 
+	    <div class="wrapper">
+	         <div class="left1" id="d1" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left2" id="d2" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left3" id="d3" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left4" id="d4" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left5" id="d5" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left6" id="d6" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left7" id="d7" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left8" id="d8" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left9" id="d9" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	     </div> 
+	    <div class="wrapper">
+	         <div class="left1" id="e1" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left2" id="e2" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left3" id="e3" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left4" id="e4" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left5" id="e5" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left6" id="e6" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left7" id="e7" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left8" id="e8" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	         <div class="left9" id="e9" name="seats" onclick="checkBooking(this);"><p>Available</p></div>
+	     </div>
+	     <div class="wrapper" id="tickets">
+	        <p>You have booked 0 tickets</p>
+	     </div>
+	     <div class="wrapper">
+	        <p>Click on the seats above to make your booking.</p>
+	     </div>
+	 </div>
+	 <div id="side-b">
+	     <div class="menuRight">
+            <h4>Meal Pricing</h4>
+            <p>Hotdog Meal : $6 <br />Popcorn Meal : $5</p>
+	        <form name="foodForm" onsubmit="return checkForm()">
+	            <!-- total number of meals cannot exceed total number of tickets purchased -->
+	            # of Hotdog Meal ($6/meal): <input type="text" name="hotdogQty" length="3" size="3px"/>
+                <br />
+                # of Popcorn Meal ($4/meal): <input type="text" name="popcornQty" length="3" size="3px" />
+                <p class="smalltext">Total # of meals cannot exceed total number of tickets purchases</p>
+                <br />
+	            <!-- here's some specials to go with -->
+	            <p>Here's the special deal of the day:</p>
+	            Sky Walker($10):<input type="text" name="skywalker" length="3" size="3px"/>
+                <p class="smalltext">You can only buy 1 Sky Walker for every meal you've purchased.</p> 
+                <br />
+                <!-- show total price here -->
+                Please pay in $100 notes
+                <input type="text" name="hundred" length="3" size="3px" />
+                <br />
+                <input type="submit" value="Order Now">                
+	        </form>             
+	     </div>
+	     <div id="orderResults"> </div>
+	 </div>
+</div>
+</body>
+</html>
+

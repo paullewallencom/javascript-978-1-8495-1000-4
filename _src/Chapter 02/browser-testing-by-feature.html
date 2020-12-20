@@ -1,0 +1,27 @@
+
+<html>
+<head><title>Testing browser capabilities using .hasFeature()</title></head>
+<body>
+<script>
+var hasCore = document.implementation.hasFeature("Core","2.0");
+document.write("Availability of Core is "+ hasCore + "<br>");
+
+var hasHTML = document.implementation.hasFeature("HTML","2.0");
+document.write("Availability of HTML is "+ hasHTML + "<br>");
+
+var hasXML = document.implementation.hasFeature("XML","2.0");
+document.write("Availability of XML is "+ hasXML  + "<br>");
+
+var hasStyleSheets = document.implementation.hasFeature("StyleSheets","2.0");
+document.write("Availability of StyleSheets is "+ hasStyleSheets  + "<br>" );
+
+var hasCSS = document.implementation.hasFeature("CSS","2.0");
+document.write("Availability of CSS is "+ hasCSS  + "<br>" );
+
+var hasCSS2 = document.implementation.hasFeature("CSS2","2.0");
+document.write("Availability of CSS2 is "+ hasCSS2  + "<br>");
+
+
+</script>
+</body>
+</html>

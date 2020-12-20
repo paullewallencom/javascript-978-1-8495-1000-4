@@ -1,0 +1,23 @@
+<html>
+<head><title>JavaScript Errors</title>
+<script type="text/javascript">
+/*
+2. Runtime Errors
+*/
+
+alert (window.innerHTML);
+
+var Test = "a variable that is defined";
+alert(Test); // if variables is wrongly typed, than nothing wil happen
+
+// nothing happens when the user clicks on the HTML button, which invokes the following function
+function incorrectFunction(){
+	alert(noSuchVariable);
+}
+</script>
+</head>
+<body>
+<input type="button" value="click me" onclick="incorrectFunction()" />
+
+</body>
+</html>

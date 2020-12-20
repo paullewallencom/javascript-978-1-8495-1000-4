@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>JsLitmus Testing Example</title>
+
+<script type="text/javascript" src="JSLitmus.js"></script>
+<script type="text/javascript">
+function testingLoop(){
+	var i = 0;
+	while(i<100)
+		++i;
+	
+	return 0;
+}
+
+JSLitmus.test('testing testingLoop()',testingLoop);
+
+</script>
+</head>
+
+<body>
+  <p>Doing a simple test using JsLitmus.</p>
+  <div id="test_element" style="overflow:hidden; width: 1px; height:1px;"></div>
+</body>
+</html>
+ 

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>This is a sample title</title>
+<!-- <link  rel="stylesheet" type="text/css" href="style.css">"> ">  -->
+<style type="text/css">
+body{
+    background-color:#cccccc;
+}
+/* Here we create a CSS selector for IDs by a name preceded by a hash character */
+#container{
+    width:750px; /* this makes the width of the div element with the id 'container' to have a width of 750px */
+    height:430px;
+    border:1px solid black;solid 1px black;
+
+}
+/* #[nameOfElement] */
+#boxed1{
+    /* an example of background property */
+    background-color:#ff6600;
+    
+    /* an example of border property */
+    border:2px solid black;
+    
+    /* an example of background   property */
+    height:360px;
+    width:300px;
+    
+    /* an example of padding properties */
+    padding:20px;
+         
+    float:left;  
+     
+    margin:10px;
+}
+
+#boxed2{
+    /* an example of background property */
+    background-color:#ff6600;
+    
+    /* an example of border property */
+    border:2px solid black;
+    
+    /* an example of background   property */
+    height:360px;
+    width:300px;
+    
+    /* an example of padding properties */
+    padding:20px;
+         
+    float:left;  
+     
+    margin:10px;
+}
+ 
+#ordered1{
+    font-size:20px;
+    color:#ce0000;
+    text-align:center;
+}
+#unordered1{
+    font-size:12px;
+    color:#000f00;
+    
+}
+
+#ordered2{
+    font-size:20px;
+    color:#ce0000;
+    text-align:center;
+}
+#unordered2{
+    font-size:12px;
+    color:#000f00;
+    
+}
+
+#unordered2.nice{
+    font-size:16px;    
+}
+
+/* here we create a CSS class ; note the different style of naming a CSS class as compared to a CSS id 
+ * A  class selector is preceded by a full stop instead of a hash character
+*/
+.intro{
+    color:#00000;
+    font-weight:bold;
+}
+
+
+a:link {color:#FF0000;}      /* unvisited link */
+a:visited {color:#00FF00;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+</style>
+<script type="text/javascript">
+function changeProperties(d){
+    var e = document.getElementById(d);
+    e.style.position = "absolute";
+    e.style.fontFamily = "sans-serif";
+    e.style.backgroundColor = "#000000";
+    e.style.border = "solid 2px black";
+    e.style.left = "200px";
+    e.style.color = "#ffffff";
+}
+function arrangeList(f) {
+     // This is the element whose children we are going to sort
+     if (typeof f == "string"){ // check to see if the element is "string"
+        f = document.getElementById(f);
+     }        
+     // Transfer the element (but not text node) children of e to a real array
+     var listElements = [];
+     for(var x = f.firstChild; x != null; x = x.nextSibling)
+         if (x.nodeType == 1){
+            listElements.push(x);   
+     }          
+     listElements.sort(function(n, m) { // .sort is a built in method of arrays 
+                   var s = n.firstChild.data; 
+                   var t = m.firstChild.data; 
+                   if (s < t){
+                       return -1;
+                   }    
+                          
+                   else if (s > t){
+                       return 1;     
+                   }   
+                   else{
+                       return 0;   
+                   }             
+     });
+     for(var i = 0; i < listElements.length; i++){
+        f.appendChild(listElements[i]); 
+     } 
+}
+
+function insertContent(a){
+    var elementToBeInserted = document.getElementById(a);
+    elementToBeInserted.innerHTML = "<h1>This is a dynamic content</h1><br><p>great to be here</p>";
+}
+function changeElementUsingName(a){
+    var n = document.getElementsByName(a);
+    for(var i = 0; i< n.length; i++){
+	n[i].setAttribute("style","color:#ffffff");
+    }
+}
+function hideElement(a){
+    var header = document.getElementById(a);
+    header.style.visibility = "hidden";
+}
+
+function hideElementUsingTagName(a){
+    var n = document.getElementsByTagName(a);
+    for(var i = 0; i< n.length; i++){
+	n[i].setAttribute("style","visibility:hidden");
+    }
+}
+</script>
+</head>
+<body>
+<h1 id="header1">This is header 1</h1>
+<h2>This is header 2</h2>
+<h3>This is header 3</h3>
+<div id="empty"></div>
+<p class="intro">This is a paragraph. I am styled by a class called "intro"</p>
+<hr>
+<div id="container">
+    <div id="boxed1">I am enclosed within a <i>div</i> tag. And i can be styled on a document level.
+        <ol id="ordered1">
+            <li>this is an ordered list and it is centered</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ol>
+
+        <ul id="unordered1">
+            <li>this is an unordered list  and it is centered</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ul>
+        
+        <a class="link" name="lost" href="#">I am a link that is styled by a class</a>
+    </div>
+
+    <div id="boxed2">I am enclosed within a <i>div</i> tag. 
+        <ol id="ordered2">
+            <li>this is an ordered list and it is centered</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ol>
+
+        <ul class="nice" id="unordered2">
+            <li>this is an unordered list  and it is centered and i have a class defined</li>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ul>
+        
+        <a class="link" name="lost" href="#">I am a link that is styled by a class</a>
+    </div>
+</div>
+<button onclick="changeProperties('boxed2')">change properties</button>
+<button onclick="insertContent('empty')">Create dynamic content</button>
+<button onclick="arrangeList('ordered2')">Rearrange list</button>
+<button onclick="arrangeList('unordered2')">Rearrange unordered list</button>
+<button onclick="hideElement('header1')">hide header 1</button>
+<button onclick="changeElementUsingName('lost')">Change hyperlink colors</button>
+<button onclick="hideElementUsingTagName('h2')">Hide header 2 (using tag name)</button>
+</body>
+</html>

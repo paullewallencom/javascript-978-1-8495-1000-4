@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript">
+/*
+code here can also be edited to just show error in teh console, 
+just need to throw new Error("it must be number");
+those stuff in the catch block can be removed
+*/
+function factorial(x) {
+    if(x == 0) {
+        return 1;
+    }
+    else {
+        return x * factorial(x-1);
+    }
+               
+}
+try {
+    var a = prompt("Please enter a positive integer", "");
+    if(a < 0){
+        var error = new Error(1);
+        alert(error.message);
+        alert(error.name);
+        throw error;
+    }
+    else if(isNaN(a)){
+        var error = new Error("it must be a number");
+        alert(error.message);  
+        alert(error.name);      
+        throw error;
+    }
+    var f = factorial(a);
+    
+    alert(a + "! = " + f);
+}
+catch (error) {  
+    if(error.message == 1) {
+        alert("value cannot be negative");     
+    }
+    else if(error.message == "it must be a number") {
+        alert("value must be a number");
+    }
+    else
+        throw error;
+}
+finally {
+    alert("ok, all is done!");
+}
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+function factorial(x) {
+    if(x == 0) {
+        return 1;
+    }
+    else {
+        return x * factorial(x-1);
+    }              
+}
+try {
+    var a = prompt("Please enter a positive integer", "");
+    if(a < 0){        
+        throw new Error("Number must be bigger than zero");
+    }
+    else if(isNaN(a)){      
+        throw new Error("You must enter a number");
+    }
+    var f = factorial(a);
+    
+    alert(a + "! = " + f);
+}
+catch (error) {  
+    throw error;
+}
+</script>
+</head>
+<body>
+</body>
+</html>
